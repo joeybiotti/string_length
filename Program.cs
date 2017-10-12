@@ -13,13 +13,13 @@ namespace string_big_or_small
             int value;
             Int32.TryParse(line, out value);
 
-            if(value < 10)
+            if(value > 100)
             {
-                Console.WriteLine("This number is too big");
+                Console.WriteLine("Woah! This number is too big. Let's dial it back a bit.");
             }
             else
             {
-                Console.WriteLine("This number is big enough");
+                Console.WriteLine("C'mon. This number is way too small. Get serious.");
             }
 
             Console.ReadLine();
